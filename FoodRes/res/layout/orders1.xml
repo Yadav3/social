@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10dp" >
+     <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" >
+
+        <TextView
+            android:id="@+id/txtOrderDateId"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.7"
+            android:background="@drawable/borderbg"
+            android:padding="10dp"
+            android:text="Order Id#"
+            android:textColor="#4e4e4e" />
+
+        <TextView
+            android:id="@+id/txtOrderDateId1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="@drawable/signupborder"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+    
+     <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" >
+
+        <TextView
+            android:id="@+id/txtOrderDatePlaced"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.7"
+            android:background="@drawable/borderbg"
+            android:padding="10dp"
+            android:text="Date Order Placed"
+            android:textColor="#4e4e4e" />
+
+        <TextView
+            android:id="@+id/txtOrderDatePlaced1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="@drawable/signupborder"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" >
+
+        <TextView
+            android:id="@+id/txtOrderDate"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.7"
+            android:background="@drawable/borderbg"
+            android:padding="10dp"
+            android:text="Delivery Date"
+            android:textColor="#4e4e4e" />
+
+        <TextView
+            android:id="@+id/txtDeliveryDate1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="@drawable/signupborder"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/txtOrderVenue"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:background="@drawable/borderbg"
+            android:padding="10dp"
+            android:text="Venue"
+            android:textColor="#4e4e4e" />
+
+        <TextView
+            android:id="@+id/txtOrderVenue1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="@drawable/signupborder"
+            android:padding="10dp"
+            android:text="Alankritha"
+            android:textColor="@color/red_color" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/txtOrderType1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:background="@drawable/borderbg"
+            android:padding="10dp"
+            android:text="Order type"
+            android:textColor="#4e4e4e" />
+
+        <TextView
+            android:id="@+id/txtOrderType2"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="@drawable/signupborder"
+            android:padding="10dp"
+            android:text="Pickup"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout03"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/txtOrderAmount"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:background="@drawable/borderbg"
+            android:padding="10dp"
+            android:text="Amount"
+            android:textColor="#4e4e4e" />
+
+        <TextView
+            android:id="@+id/txtOrderAmount1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="@drawable/signupborder"
+            android:padding="10dp"
+            android:text="Rs. 300"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout05"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txtOrderStatus"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:background="@drawable/borderbg"
+            android:padding="10dp"
+            android:text="Status"
+            android:textColor="#4e4e4e" />
+
+        <TextView
+            android:id="@+id/txtOrderStatus1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="@drawable/signupborder"
+            android:padding="10dp"
+            android:text="Pending"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout04"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txtOrderPoints"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:background="@drawable/borderbg"
+            android:padding="10dp"
+            android:text="Points"
+            android:textColor="#4e4e4e" />
+
+        <TextView
+            android:id="@+id/txtOrderPoints1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="@drawable/signupborder"
+            android:padding="10dp"
+            android:text="500"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+</LinearLayout>

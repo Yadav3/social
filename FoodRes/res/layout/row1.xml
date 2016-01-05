@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LYRow"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <LinearLayout
+        android:id="@+id/LyDetail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.6"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtRestaurantName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:singleLine="true"
+            android:text="Baseraa Inn Restaurant , AS Rao Nagar"
+            android:textColor="@color/red_color"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/txtRestaurantAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Audi, 12th Square Building, Road No 12"
+            android:textColor="#707070"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtCuisine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:singleLine="true"
+            android:text="Chinese, Mongolian, Tandoori"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LYReview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtBetheFirstReview1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="Be the first to review"
+            android:textColor="#2784c5"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <RatingBar
+            android:id="@+id/ratingbarRestaurant1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:isIndicator="true"
+            android:minHeight="20dp"
+            android:progressDrawable="@drawable/custom_ratingbar"
+            android:rating="3" />
+
+        <TextView
+            android:id="@+id/txtReviews"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="(33) REVIEWS"
+            android:textColor="@color/red_color"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtDistance"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="0.1 km"
+            android:textColor="@color/red_color" />
+
+    </LinearLayout>
+
+</LinearLayout>

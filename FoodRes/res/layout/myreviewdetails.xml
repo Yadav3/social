@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RLReviewDetails"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_below="@id/linearLayout1"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:visibility="visible" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+        android:id="@+id/RLTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@color/red_color" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:id="@+id/etFind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/options"
+            android:layout_toRightOf="@+id/back"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:text="Review Details" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:padding="10dp"
+            android:visibility="invisible"
+            android:src="@drawable/menu_icon" />
+    </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RLTitle"
+            android:background="#d1d1d1" >
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout01"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <RelativeLayout
+                    android:id="@+id/relaytivelay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white"
+                    android:padding="5dp" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true" >
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.3"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/txtReviewDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="AUG 31, 2013"
+                                android:textColor="#777777"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <RatingBar
+                            android:id="@+id/ratingbarRestaurant"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:layout_marginRight="5dp"
+                            android:isIndicator="true"
+                            android:minHeight="20dp"
+                            android:progressDrawable="@drawable/custom_ratingbar"
+                            android:rating="3" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relaytivelay"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/txtReview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="4dp"
+                        android:text="@string/review_string"
+                        android:textColor="#414141"
+                        android:textSize="11dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnLay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linearl"
+                    android:layout_marginBottom="1dp"
+                    android:background="#F9F9F9"
+                    android:padding="10dp" >
+
+                    <LinearLayout
+                        android:id="@+id/lln1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:id="@+id/txtServ"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="Service"
+                                android:textColor="#414141"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+
+                            <RatingBar
+                                android:id="@+id/serveRating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:isIndicator="true"
+                                android:minHeight="20dp"
+                                android:progressDrawable="@drawable/custom_ratingbar"
+                                android:rating="3" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:id="@+id/txtAtms"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="Atmosphere"
+                                android:textColor="#414141"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+
+                            <RatingBar
+                                android:id="@+id/atmosphereRating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:isIndicator="true"
+                                android:minHeight="20dp"
+                                android:progressDrawable="@drawable/custom_ratingbar"
+                                android:rating="3" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lln2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/txtFood1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="0.7"
+                                android:gravity="center_vertical"
+                                android:text="Food"
+                                android:textColor="#414141"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+
+                            <RatingBar
+                                android:id="@+id/foodRating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:isIndicator="true"
+                                android:minHeight="20dp"
+                                android:progressDrawable="@drawable/custom_ratingbar"
+                                android:rating="3" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/txtVal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="Value"
+                                android:textColor="#414141"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+
+                            <RatingBar
+                                android:id="@+id/valueRating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:isIndicator="true"
+                                android:minHeight="20dp"
+                                android:progressDrawable="@drawable/custom_ratingbar"
+                                android:rating="3" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnarlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lnLay"
+                    android:background="@color/white"
+                    android:padding="15dp" >
+
+                    <TextView
+                        android:id="@+id/txtDeleteReview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:gravity="right"
+                        android:padding="10dp"
+                        android:text="Delete this review"
+                        android:textColor="#414141"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

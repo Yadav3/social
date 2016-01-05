@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RLWriteReview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="20dp" >
+
+    <TextView
+        android:id="@+id/txtSendMobileTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#f0f0f0"
+        android:drawableLeft="@drawable/write_review"
+        android:drawablePadding="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="Send To Friend "
+        android:textColor="#373737"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/edtreceivername"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSendMobileTitle"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Enter Receiver Name Here"
+        android:singleLine="true"
+        android:textColor="#4a4a4a"
+        android:textSize="13sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edtReceiverEmail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtreceivername"
+        android:layout_alignRight="@+id/edtreceivername"
+        android:layout_below="@+id/edtreceivername"
+        android:ems="10"
+        android:hint="Enter Receiver Email Here"
+        android:singleLine="true"
+        android:textColor="#4a4a4a"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/edtMsg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtReceiverEmail"
+        android:layout_alignRight="@+id/edtReceiverEmail"
+        android:layout_below="@+id/edtReceiverEmail"
+        android:ems="10"
+        android:hint="Enter Message Here"
+        android:minLines="4"
+        android:gravity="top"
+        android:textColor="#4a4a4a"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/btnWriteReviewSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignRight="@+id/edtMsg"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_below="@+id/edtMsg"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:background="@color/red_color"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="Send "
+        android:textColor="@color/white"
+        android:textSize="13sp" />
+
+</RelativeLayout>

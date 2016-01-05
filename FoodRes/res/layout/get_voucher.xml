@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@color/red_color" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:padding="15dp"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:id="@+id/etRestName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/back"
+            android:text="Your Deal Details"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+    
+    <LinearLayout
+      android:id="@+id/llY3"
+      android:layout_width="fill_parent"
+      android:layout_height="@dimen/button_height"
+      android:layout_below="@+id/top_layout"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      android:layout_marginTop="15dp"
+      android:weightSum="4"
+      android:background="#D8D8D8" >
+
+        <TextView
+            android:id="@+id/txtOrderItem"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            android:padding="10dp"
+            android:text="Item"
+            android:gravity="center"
+            android:textSize="13sp"
+             />
+
+        <TextView
+            android:id="@+id/txtOrderQty"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:padding="10dp"
+               android:gravity="center"
+            android:text="Qty"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/txtOrderPrice"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:padding="10dp"
+               android:gravity="center"
+            android:text="Price"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/txtOrderTotal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:padding="10dp"
+            android:text="Total"
+               android:gravity="center"
+            android:textSize="13sp" />
+    </LinearLayout>
+    <ListView
+       android:id="@+id/listview_row_value"
+       android:layout_width="fill_parent"
+       android:layout_height="60dp"
+       android:layout_below="@+id/llY3"
+       android:layout_marginBottom="3dp"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="6dp"
+       android:layout_marginTop="3dp" >
+
+    </ListView>
+    <RelativeLayout
+      android:id="@+id/llY4"
+      android:layout_width="fill_parent"
+      android:layout_height="@dimen/button_height"
+      android:layout_below="@+id/listview_row_value"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="3dp"
+      android:background="#7E7E7E"
+      android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txtOrderItem1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:padding="10dp"
+            android:text=" Total "
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+      <!--   <TextView
+            android:id="@+id/txtOrderQty1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="  "
+            android:textColor="#4e4e4e"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/txtOrderPrice1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="13sp"/> -->
+
+        <TextView
+            android:id="@+id/txtDealsTotal1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/rupee_white"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sv_listt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llY4"
+        android:layout_marginLeft="10dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_details"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llY4"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="Your details"
+                android:textColor="@color/red_color"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/llY5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_billing"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/lay1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_cname"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="First Name"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/tv_cname_value"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/button_height"
+                        android:background="@drawable/border_1"
+                        android:drawableRight="@drawable/crose1"
+                        android:inputType="none"
+                        android:padding="5dp"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_cphone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Last Name"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/tv_lastname_value"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/button_height"
+                        android:background="@drawable/border_1"
+                        android:drawableRight="@drawable/crose1"
+                        android:inputType="none"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Lay3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_email"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:text="Email:"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/tv_email_value"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/button_height"
+                        android:background="@drawable/border_1"
+                        android:drawableRight="@drawable/crose1"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Lay4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_address"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:text="Phone"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/tv_phone_value"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/button_height"
+                        android:background="@drawable/border_1"
+                        android:drawableRight="@drawable/crose1"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="" />
+
+                </LinearLayout>
+                 <LinearLayout
+                    android:id="@+id/Lay5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_address1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:text="Address"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/tv_address_value"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/button_height"
+                        android:background="@drawable/border_1"
+                        android:drawableRight="@drawable/crose1"
+                        android:inputType="text"
+                        android:maxLength="70"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ly_checkboxx"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <CheckBox
+                            android:id="@+id/tv_checkbox_bottom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_terms"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                    <!--
+            <CheckBox
+            android:id="@+id/tv_checkbox_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save this address for further use"
+            android:textSize="12sp" />
+                    -->
+
+                    <CheckBox
+                        android:id="@+id/tv_checkbox_bottom1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Send me eatz newsletter with the latest specials and offers."
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_bottom_click"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/red_color"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Get Voucher"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

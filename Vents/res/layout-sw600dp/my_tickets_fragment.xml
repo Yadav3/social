@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/first_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_top_size"
+        android:background="@color/black" >
+
+        <TextView
+            android:id="@+id/event_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/my_tickets"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tab_button_height"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+      
+        android:dividerHeight="1.0sp" >
+    </ListView>
+
+     <RelativeLayout
+        android:id="@+id/no_ticket"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/no_tickets_to_display"
+        android:visibility="gone"
+         >
+
+        <TextView
+            android:id="@+id/back_home_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="150dp"
+            android:background="@drawable/backtohome_btn" />
+    </RelativeLayout>
+
+</LinearLayout>

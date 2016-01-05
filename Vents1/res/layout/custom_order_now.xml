@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/menu_text" >
+
+        <TextView
+            android:id="@+id/ticket_title"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center|center_vertical"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/button_height"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/iam"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:button="@drawable/custom_checkbox_design"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:text="@string/iam"
+            android:textColor="#1d2328"
+            android:textSize="@dimen/button_height" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/main_layout"
+        android:background="@drawable/line" />
+
+    <TextView
+        android:id="@+id/attendee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_layout"
+        android:padding="10dp"
+        android:text="@string/attendee"
+        android:textColor="@color/black"
+        android:textSize="@dimen/button_height"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/attendee"
+        android:layout_alignRight="@+id/attendee"
+        android:layout_below="@+id/attendee"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/line"
+        android:padding="10dp" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tfname1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/fname"
+            android:textColor="@color/form_field"
+            android:textSize="@dimen/button_height"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/star1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/star"
+            android:textColor="@color/red"
+            android:textSize="@dimen/button_height1"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/fname1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/linear1"
+        android:layout_alignRight="@+id/linear1"
+        android:layout_below="@+id/linear1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="@string/fname"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black" >
+    </EditText>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fname1"
+        android:layout_alignRight="@+id/fname1"
+        android:layout_below="@+id/fname1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/temail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/email"
+            android:textColor="@color/form_field"
+            android:textSize="@dimen/button_height"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/star2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/star"
+            android:textColor="@color/red"
+            android:textSize="@dimen/button_height1"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/email1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/linear2"
+        android:layout_alignRight="@+id/linear2"
+        android:layout_below="@+id/linear2"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black" >
+    </EditText>
+
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/email1"
+        android:layout_alignRight="@+id/email1"
+        android:layout_below="@+id/email1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/phone"
+            android:textColor="@color/form_field"
+            android:textSize="@dimen/button_height"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/star3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/star"
+            android:textColor="@color/red"
+            android:textSize="@dimen/button_height1"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/phone1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/linear3"
+        android:layout_alignRight="@+id/linear3"
+        android:layout_below="@+id/linear3"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background"
+        android:ems="10"
+        android:hint="@string/phone"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black" >
+    </EditText>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignLeft="@+id/phone1"
+        android:layout_alignRight="@+id/phone1"
+        android:layout_below="@+id/phone1"
+        android:layout_marginBottom="10dp" />
+
+</RelativeLayout>

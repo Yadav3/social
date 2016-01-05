@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/RLTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/red_color" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:padding="10dp"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:id="@+id/etRestName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/lyCart"
+            android:layout_toRightOf="@+id/back"
+            android:text="Hitech Bawarchi"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/lyCart"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/header_height"
+            android:layout_alignParentRight="true"
+            android:background="#064673"
+            android:paddingLeft="5dp" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_cart1" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/arrow_side_right"
+                android:gravity="center_vertical"
+                android:text="1 Items"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lyDelivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RLTop"
+        android:layout_margin="5dp" >
+
+        <TextView
+            android:id="@+id/txtDelivery1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="Delivery Timings :"
+            android:textColor="@color/red_color"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDelivery2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="12:00 pm-11:00 pm "
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lyDelivery"
+        android:layout_margin="5dp" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/txtDist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="Dist. Limit:"
+                android:textColor="@color/red_color"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtDist1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 kms "
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/txtCOD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="Cash on delivery: "
+                android:textColor="@color/red_color"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtCOD1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Available "
+                android:textColor="#68b152"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtMenu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/LinearLayout01"
+        android:background="@color/red_color"
+        android:padding="10dp"
+        android:text="Menu"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignLeft="@+id/LinearLayout01"
+        android:layout_alignParentBottom="true"
+        android:background="@color/red_color"
+        android:padding="10dp"
+        android:text="Continue"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</RelativeLayout>

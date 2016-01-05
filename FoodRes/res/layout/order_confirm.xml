@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@id/RLTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@color/red_color" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/back"
+            android:text="Confirmation"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+          
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@null"
+            android:padding="10dp"
+            android:src="@drawable/ls_icon_search" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/RLTop" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_conformNext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_thanks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Thanks for your order"
+                    android:textColor="@color/red_color"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_margin="3dp"
+                    android:background="#D8D8D8" />
+
+                <TextView
+                    android:id="@+id/tv_mailrecieve"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Confirmation has been emailed to emailaddress@gmail.com"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_margin="3dp"
+                    android:background="#D8D8D8" />
+
+                <WebView
+                    android:id="@+id/webivew_points"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_checkStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:background="@color/red_color"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:padding="4dp"
+                    android:text="Check Order Status"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+                
+                <WebView
+                    android:id="@+id/webivew_points1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_margin="3dp"
+                    android:background="#D8D8D8" />
+
+                <TextView
+                    android:id="@+id/tv_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Note: Pay for your order when you pick it up."
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_margin="3dp"
+                    android:background="#D8D8D8" />
+
+                <TextView
+                    android:id="@+id/tv_backtohome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Back to Home"
+                    android:textColor="@color/red_color"
+                    android:textSize="14dp" />
+                
+                <TextView
+                    android:id="@+id/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="fdsfsf"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+                <TextView
+                    android:id="@+id/tv_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="10dp"
+                    android:background="@color/red_color"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:padding="8dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/know_more_earn_poings"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/red_color"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/know_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="Know more about eatz reward points >>"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

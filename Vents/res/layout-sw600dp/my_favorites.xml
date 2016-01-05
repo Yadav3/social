@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/first_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BDBDBD"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_top_size"
+       android:background="@color/black"
+        android:focusableInTouchMode="true"
+       >
+<RelativeLayout
+        android:id="@+id/menuLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/tab_top_size"
+        >
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="15dp"
+            android:layout_height="22dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back_icon"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/event_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:text="@string/myfavorite"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tab_button_height" >
+           
+            </TextView>
+            </RelativeLayout>
+            <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:padding="10.0dip"
+            android:text="Edit"
+            android:textSize="@dimen/tab_button_height"
+            android:textColor="#ffffffff"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="15.0sp"
+        android:paddingRight="5dp"
+        android:padding="10dp"
+         android:divider="@android:color/transparent"
+        android:layout_margin="5dp" >
+    </ListView>
+    <RelativeLayout
+        android:id="@+id/no_ticket"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/no_events_your_favourites"
+        android:visibility="gone"
+         >
+
+        <TextView
+            android:id="@+id/back_home_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="150dp"
+            android:background="@drawable/backtohome_btn" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_top_size"
+        android:background="@color/black"
+        android:focusableInTouchMode="true" >
+
+        <RelativeLayout
+            android:id="@+id/menuLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/tab_top_size" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="15dp"
+                android:layout_height="22dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/back_icon"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/event_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/textView1"
+                android:text="@string/ticket_regi"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tab_button_height"
+                android:textStyle="bold" >
+            </TextView>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/ordernow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+          android:background="@drawable/view_order" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/relativeLayout1"
+        android:background="@color/order_bg"
+        android:focusableInTouchMode="true" >
+
+        <TextView
+            android:id="@+id/payoptions1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/your"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tab_button_height"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/next"
+        android:layout_below="@+id/relativeLayout4" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="20dp" >
+
+                <LinearLayout
+                    android:id="@+id/linear1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tfname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/fname"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/tab_button_height"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/star1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="@string/star"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/tab_button_height1"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/fname"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignLeft="@+id/linear1"
+                    android:layout_alignRight="@+id/linear1"
+                    android:layout_below="@+id/linear1"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext1"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:hint="@string/fname"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp" >
+                </EditText>
+
+                <LinearLayout
+                    android:id="@+id/linear2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/fname"
+                    android:layout_alignRight="@+id/fname"
+                    android:layout_below="@+id/fname"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/temail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/email"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/tab_button_height"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/star2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="@string/star"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/tab_button_height1"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignLeft="@+id/linear2"
+                    android:layout_alignRight="@+id/linear2"
+                    android:layout_below="@+id/linear2"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext1"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="10dp" >
+                </EditText>
+
+                <LinearLayout
+                    android:id="@+id/linear3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/email"
+                    android:layout_alignRight="@+id/email"
+                    android:layout_below="@+id/email"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tphone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/phone"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/tab_button_height"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/star3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="@string/star"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/tab_button_height1"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignLeft="@+id/linear3"
+                    android:layout_alignRight="@+id/linear3"
+                    android:layout_below="@+id/linear3"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext1"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:hint="@string/phone"
+                    android:inputType="phone"
+                    android:paddingLeft="10dp" >
+                </EditText>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/phone"
+                    android:background="@color/order_bg"
+                    android:focusableInTouchMode="true" >
+
+                    <TextView
+                        android:id="@+id/payoptions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="@string/poptions"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/tab_button_height"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/toggle_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/togglebutton"
+                    android:layout_alignBottom="@+id/togglebutton"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/relativeLayout3"
+                           android:textSize="@dimen/tab_button_height"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/cash" />
+
+                <ToggleButton
+                    android:id="@+id/togglebutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeLayout3"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/toggle_title"
+                    android:background="@drawable/tb_selector" />
+
+                <LinearLayout
+                    android:id="@+id/linear_listview2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignLeft="@+id/relativeLayout3"
+                    android:layout_alignRight="@+id/relativeLayout3"
+                    android:layout_below="@+id/togglebutton"
+                    android:orientation="vertical"
+                    android:padding="10dp" >
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_top_size"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/square"
+        android:textSize="@dimen/tab_button_height"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <!--
+    <ToggleButton
+        android:id="@+id/togglebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollView1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/toggle_title"
+        android:background="@drawable/tb_selector"
+        />
+
+    <TextView
+        android:id="@+id/toggle_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/togglebutton"
+        android:layout_alignBottom="@+id/togglebutton"
+        android:layout_alignParentLeft="true"
+        android:text="@string/cash" />
+    -->
+
+</RelativeLayout>

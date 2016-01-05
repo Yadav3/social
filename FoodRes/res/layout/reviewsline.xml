@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LYRow"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imgReviewPerson"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/no_image" />
+
+        <LinearLayout
+            android:id="@+id/LYReview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtReviewUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="10dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:text="Venkatesh Abburi"
+                android:textColor="@color/red_color"
+                android:textSize="15sp" />
+
+            <RatingBar
+                android:id="@+id/ratingbarReview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="10dp"
+                android:isIndicator="true"
+                android:minHeight="20dp"
+                android:progressDrawable="@drawable/custom_ratingbar"
+                android:rating="3" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtReviewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:text="NOV 10 , 2013"
+            android:textColor="#818181"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LyReviewDetail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp" >
+
+        <TextView
+            android:id="@+id/txtReviewTitle2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Title"
+            android:textColor="@color/red_color"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txtReviewDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:maxLines="2"
+            android:paddingBottom="10dp"
+            android:paddingRight="5dp"
+            android:text="This place is like a big outdoor party.. lots of food,stream arising from every table and..."
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

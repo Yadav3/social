@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:focusableInTouchMode="true" >
+
+        <LinearLayout
+            android:id="@+id/menuLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="2" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@color/black"
+                android:text="@string/my_account"
+                android:textColor="@color/white"
+                android:textSize="@dimen/header1" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@color/black"
+                android:text="@string/changepwd"
+                android:textColor="@color/white"
+                android:textSize="@dimen/header1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menuLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/menuLayout"
+            android:weightSum="2" >
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="0dp"
+                android:layout_height="4dp"
+                android:layout_weight="1"
+                android:background="@color/red" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="0dp"
+                android:layout_height="4dp"
+                android:layout_weight="1"
+                android:background="@color/black" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:layout_below="@+id/relativeLayout1" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="0dp"
+            android:background="@color/white" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="20dp"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:id="@+id/linear1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tfname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/fname"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/button_height"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/star1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="@string/star"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/button_height1"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/fname"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignLeft="@+id/linear1"
+                    android:layout_alignRight="@+id/linear1"
+                    android:layout_below="@+id/linear1"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext1"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:hint="@string/fname"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp" >
+                </EditText>
+
+                <LinearLayout
+                    android:id="@+id/linear2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/fname"
+                    android:layout_alignRight="@+id/fname"
+                    android:layout_below="@+id/fname"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tcname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/cname"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/button_height"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/star2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="@string/star"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/button_height1"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/cname"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignLeft="@+id/linear2"
+                    android:layout_alignRight="@+id/linear2"
+                    android:layout_below="@+id/linear2"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext1"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:hint="@string/cname"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp" >
+                </EditText>
+
+                <LinearLayout
+                    android:id="@+id/linear3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/cname"
+                    android:layout_alignRight="@+id/cname"
+                    android:layout_below="@+id/cname"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/temail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/email1"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/button_height"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/star3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="@string/star"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/button_height1"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignLeft="@+id/linear3"
+                    android:layout_alignRight="@+id/linear3"
+                    android:layout_below="@+id/linear3"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext1"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:hint="@string/email1"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="10dp" >
+                </EditText>
+
+                <LinearLayout
+                    android:id="@+id/linear4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/email"
+                    android:layout_alignRight="@+id/email"
+                    android:layout_below="@+id/email"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tphone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/phone"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/button_height"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/star4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="@string/star"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/button_height1"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignLeft="@+id/linear4"
+                    android:layout_alignRight="@+id/linear4"
+                    android:layout_below="@+id/linear4"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext1"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:hint="@string/phone"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp" >
+                </EditText>
+
+                <LinearLayout
+                    android:id="@+id/linear5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/phone"
+                    android:layout_alignRight="@+id/phone"
+                    android:layout_below="@+id/phone"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/taddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/address"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/button_height"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/star5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="@string/star"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/button_height1"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/linear5"
+                    android:layout_alignRight="@+id/linear5"
+                    android:layout_below="@+id/linear5"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext1"
+                    android:ems="10"
+                    android:hint="@string/address"
+                    android:inputType="textMultiLine"
+                    android:lines="6"
+                    android:gravity="top|left"
+                    android:minLines="4"
+                    android:paddingLeft="10dp"
+                    android:singleLine="false" />
+
+                <LinearLayout
+                    android:id="@+id/linear6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/address"
+                    android:layout_alignRight="@+id/address"
+                    android:layout_below="@+id/address"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tcstate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/state"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/button_height"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/star6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="@string/star"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/button_height1"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <AutoCompleteTextView
+                    android:id="@+id/cstate"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignLeft="@+id/linear6"
+                    android:layout_alignRight="@+id/linear6"
+                    android:layout_below="@+id/linear6"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext1"
+                    android:ems="10"
+                    android:hint="@string/state"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp" />
+
+                <LinearLayout
+                    android:id="@+id/linear7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/cstate"
+                    android:layout_alignRight="@+id/cstate"
+                    android:layout_below="@+id/cstate"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tccity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/city"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/button_height"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/star7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="@string/star"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/button_height1"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <AutoCompleteTextView
+                    android:id="@+id/ccity"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignLeft="@+id/linear7"
+                    android:layout_alignRight="@+id/linear7"
+                    android:layout_below="@+id/linear7"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext1"
+                    android:ems="10"
+                    android:hint="@string/city"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp" />
+
+                <Button
+                    android:id="@+id/update"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignLeft="@+id/ccity"
+                    android:layout_alignRight="@+id/ccity"
+                    android:layout_below="@+id/ccity"
+                    android:layout_marginBottom="23dp"
+                    android:layout_marginTop="23dp"
+                    android:background="@drawable/square"
+                    android:text="Update"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/update" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="20dp"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:id="@+id/linear8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/topwd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/opwd"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/button_height"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/star8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="@string/star"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/button_height1"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/opwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignLeft="@+id/linear8"
+                    android:layout_alignRight="@+id/linear8"
+                    android:layout_below="@+id/linear8"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext1"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:hint="@string/opwd"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp" >
+                </EditText>
+
+                <LinearLayout
+                    android:id="@+id/linear9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/opwd"
+                    android:layout_alignRight="@+id/opwd"
+                    android:layout_below="@+id/opwd"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tnpwd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/npwd"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/button_height"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/star9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="@string/star"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/button_height1"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/npwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignLeft="@+id/linear9"
+                    android:layout_alignRight="@+id/linear9"
+                    android:layout_below="@+id/linear9"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext1"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:hint="@string/npwd"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp" >
+                </EditText>
+
+                <LinearLayout
+                    android:id="@+id/linear10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/npwd"
+                    android:layout_alignRight="@+id/npwd"
+                    android:layout_below="@+id/npwd"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tcpwd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/cpwd"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/button_height"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/star10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="@string/star"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/button_height1"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/cpwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignLeft="@+id/linear10"
+                    android:layout_alignRight="@+id/linear10"
+                    android:layout_below="@+id/linear10"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext1"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:hint="@string/cpwd"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp" >
+                </EditText>
+
+                <Button
+                    android:id="@+id/update1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignLeft="@+id/cpwd"
+                    android:layout_alignRight="@+id/cpwd"
+                    android:layout_below="@+id/cpwd"
+                    android:layout_marginTop="23dp"
+                    android:background="@drawable/square"
+                    android:text="Update"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/update1" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

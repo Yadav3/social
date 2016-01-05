@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_top_size"
+        android:background="@color/black"
+        android:focusableInTouchMode="true" >
+
+        <RelativeLayout
+            android:id="@+id/menuLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/tab_top_size" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="15dp"
+                android:layout_height="22dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/back_icon"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/event_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/textView1"
+                android:text="@string/pticket"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tab_button_height"
+                android:textStyle="bold" >
+            </TextView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:background="@color/white"
+        android:layout_below="@+id/relativeLayout1" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/ticketid"
+                android:textSize="@dimen/tab_button_height"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ticketid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/ticket"
+                android:layout_alignBottom="@+id/ticket"
+                android:layout_marginLeft="45dp"
+                android:layout_toRightOf="@+id/ticket"
+                
+                android:textSize="@dimen/tab_button_height"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/ticket"
+                android:layout_marginTop="14dp"
+                android:text="@string/event"
+                android:textSize="@dimen/tab_button_height"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/eventid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/event"
+                android:layout_alignBottom="@+id/event"
+                android:layout_alignLeft="@+id/ticketid"
+              
+                android:textSize="@dimen/tab_button_height"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tickettype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/event"
+                android:layout_marginTop="14dp"
+                android:text="@string/ticket_type"
+                android:textSize="@dimen/tab_button_height"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tickettypeid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tickettype"
+                android:layout_alignBottom="@+id/tickettype"
+                android:layout_alignLeft="@+id/eventid"
+               
+                android:textSize="@dimen/tab_button_height"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tickettype"
+                android:layout_marginTop="14dp"
+                android:text="@string/name"
+                android:textSize="@dimen/tab_button_height"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/name"
+                android:layout_alignBottom="@+id/name"
+                android:layout_alignLeft="@+id/tickettypeid"
+              
+                android:textSize="@dimen/tab_button_height"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/name"
+               android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/viewticket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/square"
+                    android:gravity="center|center_vertical"
+                    android:text="@string/vticket"
+                     android:padding="10dp"
+                     android:textSize="@dimen/tab_button_height"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/sendemail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/square"
+                    android:gravity="center|center_vertical"
+                    android:text="@string/semail"
+                     android:padding="10dp"
+                      android:textSize="@dimen/tab_button_height"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"  />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

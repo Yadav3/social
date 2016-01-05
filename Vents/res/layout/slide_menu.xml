@@ -1,0 +1,223 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/left_drawer"
+    android:layout_width="265dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="start"
+    android:fillViewport="true" >
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="265dp"
+        android:layout_height="match_parent"
+        android:background="@color/slide_bg" >
+
+        <LinearLayout
+            android:id="@+id/innerLayout"
+            android:layout_width="265dp"
+            android:layout_height="match_parent"
+            android:background="@color/hash"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <RelativeLayout
+                android:id="@+id/account"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/banner_image1"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                      android:visibility="gone"
+                    android:src="@drawable/frame" />
+
+                <TextView
+                    android:id="@+id/personname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView1"
+                    android:layout_marginTop="15dp"
+                      android:paddingLeft="15dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/button_height"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/home_main"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="0.1dp"
+                android:background="@color/slide_bg"
+                android:drawableLeft="@drawable/home1"
+                android:drawablePadding="15dp"
+                android:gravity="left|center_vertical"
+                android:minHeight="0dip"
+                android:minWidth="0dip"
+                android:paddingLeft="15dp"
+                android:text="@string/home"
+                android:textColor="@color/menu_text"
+                android:textSize="@dimen/button_height" />
+
+            <Button
+                android:id="@+id/my_account"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="0.1dp"
+                android:background="@color/slide_bg"
+                android:drawableLeft="@drawable/note"
+                android:drawablePadding="15dp"
+                android:gravity="left|center_vertical"
+                android:minHeight="0dip"
+                android:minWidth="0dip"
+                android:paddingLeft="15dp"
+                android:text="@string/my_account"
+                android:textColor="@color/menu_text"
+                android:textSize="@dimen/button_height" />
+
+            <Button
+                android:id="@+id/my_tickets"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="0.1dp"
+                android:background="@color/slide_bg"
+                android:drawableLeft="@drawable/view3"
+                android:drawablePadding="15dp"
+                android:gravity="left|center_vertical"
+                android:minHeight="0dip"
+                android:minWidth="0dip"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:text="@string/my_tickets"
+                android:textColor="@color/menu_text"
+                android:textSize="@dimen/button_height" />
+
+            <Button
+                android:id="@+id/my_favorites"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="0.1dp"
+                android:background="@color/slide_bg"
+                android:drawableLeft="@drawable/favorite"
+                android:drawablePadding="15dp"
+                android:gravity="left|center_vertical"
+                android:minHeight="0dip"
+                android:minWidth="0dip"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:text="@string/myfavorite"
+                android:textColor="@color/menu_text"
+                android:textSize="@dimen/button_height" />
+            <Button
+                android:id="@+id/print_ticket"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="0.1dp"
+                android:background="@color/slide_bg"
+                android:drawableLeft="@drawable/print"
+                android:drawablePadding="15dp"
+                android:gravity="left|center_vertical"
+                android:minHeight="0dip"
+                android:minWidth="0dip"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:text="@string/pticket"
+                android:textColor="@color/menu_text"
+                android:textSize="@dimen/button_height" />
+
+            <Button
+                android:id="@+id/about_us"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="0.1dp"
+                android:background="@color/slide_bg"
+                android:drawableLeft="@drawable/contact3"
+                android:drawablePadding="15dp"
+                android:gravity="left|center_vertical"
+                android:minHeight="0dip"
+                android:minWidth="0dip"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:text="@string/about_us"
+                android:textColor="@color/menu_text"
+                android:textSize="@dimen/button_height" />
+
+            <Button
+                android:id="@+id/contact"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="0.1dp"
+                android:background="@color/slide_bg"
+                android:drawableLeft="@drawable/view4"
+                android:drawablePadding="17dp"
+                android:gravity="left|center_vertical"
+                android:minHeight="0dip"
+                android:minWidth="0dip"
+                android:paddingBottom="5dp"
+                android:paddingLeft="18dp"
+                android:paddingTop="5dp"
+                android:text="@string/contact"
+                android:textColor="@color/menu_text"
+                android:textSize="@dimen/button_height" />
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="0.1dp"
+                android:background="@color/slide_bg"
+                android:drawableLeft="@drawable/logout"
+                android:drawablePadding="17dp"
+                android:gravity="left|center_vertical"
+                android:minHeight="0dip"
+                android:minWidth="0dip"
+                android:paddingBottom="5dp"
+                android:paddingLeft="18dp"
+                android:paddingTop="5dp"
+                android:text="@string/login"
+                android:textColor="@color/menu_text"
+                android:textSize="@dimen/button_height" />
+
+            <Button
+                android:id="@+id/locations"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="0.1dp"
+                android:background="@color/slide_bg"
+                android:drawableLeft="@drawable/location"
+                android:drawablePadding="17dp"
+                android:gravity="left|center_vertical"
+                android:minHeight="0dip"
+                android:minWidth="0dip"
+                android:paddingBottom="5dp"
+                android:paddingLeft="18dp"
+                android:paddingTop="5dp"
+                android:text="@string/locations"
+                android:textColor="@color/menu_text"
+                android:textSize="@dimen/button_height" />
+
+            <LinearLayout
+                android:id="@+id/locationLayout"
+                android:layout_width="265dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+               
+                android:layout_gravity="left"
+                android:background="@color/slide_bg"
+                android:visibility="gone" >
+                
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,326 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RLTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@color/red_color" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:padding="10dp"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:id="@+id/etFind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/writeReview"
+            android:layout_toRightOf="@+id/back"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="My Reviews"
+            android:textColor="@color/white"
+            android:textSize="14sp" >
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/writeReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:padding="10dp"
+            android:src="@drawable/write_review" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#f5f5f5"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/imgReviewPerson"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/no_image" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/imgReviewPerson"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/txtUser"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:text="Name"
+                        android:textColor="@color/red_color"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvDate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Hyderabad"
+                        android:textSize="12sp" />
+
+                    <RatingBar
+                        android:id="@+id/userRating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:isIndicator="true"
+                        android:minHeight="20dp"
+                        android:progressDrawable="@drawable/custom_ratingbar"
+                        android:rating="3" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtReviewTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="Name"
+                android:textColor="@color/red_color"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvReviewDesc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text=""
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/lnLay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:background="#F9F9F9"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    android:id="@+id/lln1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/txtServ"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="Service"
+                            android:textColor="#414141"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <RatingBar
+                            android:id="@+id/serveRating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:isIndicator="true"
+                            android:minHeight="20dp"
+                            android:progressDrawable="@drawable/custom_ratingbar" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/txtAtms"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="Atmosphere"
+                            android:textColor="#414141"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <RatingBar
+                            android:id="@+id/atmosphereRating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:isIndicator="true"
+                            android:minHeight="20dp"
+                            android:progressDrawable="@drawable/custom_ratingbar" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lln2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/txtFood1"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.7"
+                            android:gravity="center_vertical"
+                            android:text="Food"
+                            android:textColor="#414141"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <RatingBar
+                            android:id="@+id/foodRating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:isIndicator="true"
+                            android:minHeight="20dp"
+                            android:progressDrawable="@drawable/custom_ratingbar" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/txtVal"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="Value"
+                            android:textColor="#414141"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <RatingBar
+                            android:id="@+id/valueRating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:isIndicator="true"
+                            android:minHeight="20dp"
+                            android:progressDrawable="@drawable/custom_ratingbar" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/lnarlay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    android:id="@+id/Ly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/txtHelpfulMsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="Was this review helpful?"
+                        android:textColor="#000000"
+                        android:textSize="10dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btnYes"
+                        android:layout_width="@dimen/button_height"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/red_color"
+                        android:minHeight="0dip"
+                        android:minWidth="0dip"
+                        android:padding="5dp"
+                        android:text="Yes"
+                        android:textColor="@color/white"
+                        android:textSize="11dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtProblemReview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/Ly"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/icon_warning"
+                    android:gravity="right|center_vertical"
+                    android:padding="5dp"
+                    android:text="Problem with this review ?"
+                    android:textColor="#707070"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

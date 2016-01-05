@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rr_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@color/red_color" 
+        >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:padding="15dp"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:id="@+id/txtRestaurantName1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/back"
+            android:singleLine="true"
+            android:text="Hitech Bawarchi"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+
+    </RelativeLayout> 
+    
+   <LinearLayout 
+       android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rr_top"
+        android:orientation="vertical">
+        
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_margin="5dp" >
+        
+         <TextView
+             android:id="@+id/txtRstAddress"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_margin="5dp"
+             android:ems="10"
+             android:text="@string/address2"
+             android:textSize="12sp" />
+         
+        <RatingBar
+        android:id="@+id/ratngBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:numStars="5"
+        android:stepSize="1.0"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        style="?android:attr/ratingBarStyleSmall"
+         /> 
+        
+         
+     </RelativeLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:padding="10dp" >
+
+         <Button
+             android:id="@+id/btnSize"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="10dp"
+             android:layout_weight="1"
+             android:background="@drawable/edittext"
+             android:drawableLeft="@drawable/profile"
+             android:padding="10dp"
+             android:text="2"
+             android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/edtDate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/edittext"
+        android:clickable="false"
+        android:drawableLeft="@drawable/date"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:inputType="none"
+        android:padding="10dp"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/btnSessions"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/edittext"
+        android:drawableLeft="@drawable/session"
+        android:padding="10dp"
+        android:textSize="13sp" />
+         
+     </LinearLayout>
+     
+     
+       
+   </LinearLayout> 
+
+ <Button
+     android:id="@+id/btn_findTable"
+     android:layout_width="match_parent"
+     android:layout_height="@dimen/button_height"
+     android:layout_alignParentBottom="true"
+     android:layout_margin="5dp"
+     android:background="@drawable/signup_background"
+     android:padding="10dp"
+     android:text="Find a Table"
+     android:textColor="#ffffff" />
+
+</RelativeLayout>

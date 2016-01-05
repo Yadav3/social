@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_strip"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_top_size"
+        android:background="@color/black"
+        android:focusableInTouchMode="true" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="15dp"
+            android:layout_height="22dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back_icon"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/event_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:text="Search"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tab_button_height"
+            android:textStyle="bold" >
+        </TextView>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_top_size"
+        android:layout_alignLeft="@+id/search_keyword"
+        android:layout_alignRight="@+id/search_keyword"
+        android:layout_below="@+id/search_keyword"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/square"
+        android:text="@string/search"
+        android:textColor="@color/white"
+        android:textSize="@dimen/tab_header1"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/search_keyword"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/tab_top_size"
+        android:layout_alignLeft="@+id/category"
+        android:layout_alignRight="@+id/category"
+        android:layout_below="@+id/category"
+        android:hint="@string/keyword"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:id="@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_top_size"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:gravity="left|center_vertical"
+        android:hint="@string/scategory"
+        android:imeOptions="actionDone" />
+
+    <TextView
+        android:id="@+id/not_found"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/search"
+        android:layout_below="@+id/search"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="No categories found"
+        android:textSize="@dimen/tab_button_height"
+        android:visibility="invisible" >
+    </TextView>
+
+    <RelativeLayout
+        android:id="@+id/selectcategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/search"
+        android:layout_alignRight="@+id/search"
+        android:layout_below="@+id/not_found"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/black" >
+
+            <TextView
+                android:id="@+id/category1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/scategory"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tab_button_height"
+                android:textStyle="bold" >
+            </TextView>
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout2" >
+        </ListView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/selectkeyword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/search"
+        android:layout_alignRight="@+id/search"
+        android:layout_below="@+id/search"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tab_top_size"
+            android:background="@color/black" >
+
+            <TextView
+                android:id="@+id/category2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="Event"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tab_button_height"
+                android:textStyle="bold" >
+            </TextView>
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/listView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout3" >
+        </ListView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignBaseline="@+id/category"
+        android:layout_alignBottom="@+id/category"
+        android:layout_alignRight="@+id/category"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/crose1"
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignBaseline="@+id/search_keyword"
+        android:layout_alignBottom="@+id/search_keyword"
+        android:layout_alignRight="@+id/search_keyword"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/crose1"
+        android:gravity="center"
+        android:visibility="gone" />
+
+</RelativeLayout>

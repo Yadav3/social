@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+         android:layout_height="@dimen/header_height"
+        android:background="@color/red_color"
+         >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:contentDescription="@null"
+            android:padding="10dp"
+            android:src="@drawable/ls_icon_search" />
+
+        <TextView
+            android:id="@+id/etFind"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/search_in_header"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/options"
+            android:layout_toRightOf="@+id/back"
+            android:background="@drawable/textfield_background_search_details"
+            android:drawableLeft="@drawable/search_icon"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:hint="@string/Whatdofind"
+            android:padding="5dp"
+            android:textSize="12sp" >
+
+        </TextView>
+        
+        <ImageView
+            android:id="@+id/options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="2dp"
+            android:contentDescription="@null"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/menu_icon" />
+        
+        
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/filters_white" >
+
+        <TextView
+            android:id="@+id/txtBookTableIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:padding="15dp"
+            android:text="Articles"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+        
+    </RelativeLayout>
+    
+    <ListView
+        android:id="@+id/articlelistview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null" >
+    </ListView>
+
+</LinearLayout>

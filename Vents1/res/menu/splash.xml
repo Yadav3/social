@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+   <!--  <item android:id="@+id/search"
+          android:title="search"
+          android:icon="@drawable/search_icon"
+          android:showAsAction="ifRoom"
+          android:actionViewClass="android.widget.SearchView" /> -->
+          <item
+        android:id="@+id/search_category"
+        android:icon="@drawable/search_icon"
+        android:showAsAction="always"
+        android:title="search"/>
+          <item
+        android:id="@+id/search_category1"
+        android:icon="@drawable/location"
+        android:showAsAction="always"
+        android:title="Choose Locations"/>
+          
+          
+
+</menu>

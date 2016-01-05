@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000000</color>
+    <color name="red">#c70c2a</color>
+    <color name="white">#ffffff</color>
+    <color name="read_morebg">#f2f2f2 </color>
+    <color name="hash">#5A5C5C</color>
+    <color name="divider">#d9d9d9</color>
+    <color name="menu_text">#bebebf</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="order_bg">#dadada</color>
+    <color name="list_view_bg">#BDBDBD</color>
+    <color name="slide_bg">#4f4f4f</color>
+    <color name="form_field">#d8d8d8</color>
+     <color name="hidden">#D1D1D1</color>
+
+</resources>

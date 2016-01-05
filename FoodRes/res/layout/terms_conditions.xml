@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@color/red_color" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:padding="15dp"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:id="@+id/etRestName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/back"
+            android:text="Mast Kalandar"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+    
+     <RelativeLayout
+        android:id="@+id/top_layout11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:layout_gravity="center">
+    
+   <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/close1"
+             />
+
+   <TextView
+       android:id="@+id/tvLocation"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignRight="@+id/iv_close"
+       android:layout_centerVertical="true"
+       android:gravity="left"
+       android:paddingLeft="5dp"
+       android:text="Terms and conditions"
+       android:textStyle="bold" />
+    
+     </RelativeLayout>
+     <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+     <WebView
+                    android:id="@+id/termsAndConditions_web"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp" />
+     </ScrollView>
+
+</LinearLayout>

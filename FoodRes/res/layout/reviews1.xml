@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RLReviewLine1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="5dp" >
+
+    <LinearLayout
+        android:id="@+id/LYReview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtReviewRestaurant"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:text="Baseraa Inn Restaurant , AS Rao Nagar"
+            android:textColor="@color/red_color"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/txtVotedAs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Voted As : "
+                android:textColor="#090909"
+                android:textSize="13sp" />
+
+            <RatingBar
+                android:id="@+id/ratingbarMyReview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:isIndicator="true"
+                android:minHeight="20dp"
+                android:progressDrawable="@drawable/custom_ratingbar"
+                android:rating="3" />
+
+            <TextView
+                android:id="@+id/txtReviewDate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nov 13, 2013"
+                android:textColor="#9f9f9f"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtMyReviewComments"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/LYReview"
+        android:layout_below="@+id/LYReview"
+        android:drawableLeft="@drawable/review_icon"
+        android:drawablePadding="5dp"
+        android:lineSpacingExtra="3dp"
+        android:text="This place is like a big outdoor party.. lots of food,stream arising from every table and..."
+        android:textColor="#5f5f5f" />
+
+</RelativeLayout>

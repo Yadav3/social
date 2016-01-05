@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_top_size"
+        android:background="@color/black" >
+
+        <RelativeLayout
+            android:id="@+id/menuLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/tab_top_size" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="15dp"
+                android:layout_height="22dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/back_icon"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/event_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/textView1"
+                android:text="@string/payoptions"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tab_button_height"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/odetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/odetails"
+        android:textSize="@dimen/tab_button_height"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/onumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/odetails"
+        android:layout_alignBottom="@+id/odetails"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/odetails"
+        android:text="" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ordernow"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/odetails"
+        android:layout_marginTop="10dp" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="7dp"
+            android:background="@color/hash" >
+
+            <TextView
+                android:id="@+id/txt_id"
+                android:layout_width="0dip"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="@string/ticket"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tab_button_height" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.001"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/txt_id2"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center"
+                android:text="@string/qnty"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tab_button_height" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.001"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/txt_id3"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center"
+                android:text="@string/total"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tab_button_height" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_above="@+id/view31"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp" >
+        </ListView>
+
+        <View
+            android:id="@+id/view31"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/linearLayout2"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_weight="0.001"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/view41"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@color/read_morebg" >
+<View
+                android:id="@+id/view13"
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.001"
+                android:background="@color/black" />
+            <TextView
+                android:id="@+id/txt_id11"
+                android:layout_width="0dip"
+                android:layout_height="45dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="3"
+                android:gravity="center_vertical|right"
+                android:paddingRight="10dp"
+                android:text="@string/st"
+                android:textColor="@color/black"
+                android:textSize="@dimen/tab_button_height" />
+
+            <View
+                android:id="@+id/view11"
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.001"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/txt_id12"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/tab_button_height" />
+            <View
+                android:id="@+id/view12"
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.001"
+                android:background="@color/black" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view41"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/linearLayout3"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_weight="0.001"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/view71"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@color/read_morebg" >
+<View
+                android:id="@+id/view22"
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.001"
+                android:background="@color/black" />
+            <TextView
+                android:id="@+id/txt_id21"
+                android:layout_width="0dip"
+                android:layout_height="45dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="3"
+                android:gravity="center_vertical|right"
+                android:paddingRight="10dp"
+                android:text="@string/sc"
+                android:textColor="@color/black"
+                android:textSize="@dimen/tab_button_height" />
+
+            <View
+                android:id="@+id/view21"
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.001"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/txt_id22"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/tab_button_height" />
+            <View
+                android:id="@+id/view32"
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.001"
+                android:background="@color/black" />
+        </LinearLayout>
+<View
+            android:id="@+id/view71"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/linearLayout5"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_weight="0.001"
+            android:background="@color/black" />
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/view51"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@color/read_morebg" >
+
+            <View
+                android:id="@+id/view72"
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.001"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/txt_id71"
+                android:layout_width="0dip"
+                android:layout_height="45dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="3"
+                android:gravity="center_vertical|right"
+                android:paddingRight="10dp"
+                android:text="@string/disc"
+                android:textColor="@color/black"
+                android:textSize="@dimen/tab_button_height" />
+
+            <View
+                android:id="@+id/view43"
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.001"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/txt_id72"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/tab_button_height" />
+
+            <View
+                android:id="@+id/view42"
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.001"
+                android:background="@color/black" />
+        </LinearLayout>
+        <View
+            android:id="@+id/view51"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/linearLayout4"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_weight="0.001"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/view61"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@color/read_morebg" >
+  <View
+                android:id="@+id/view71"
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.001"
+                android:background="@color/black" />
+            <TextView
+                android:id="@+id/txt_id31"
+                android:layout_width="0dip"
+                android:layout_height="45dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="3"
+                android:gravity="center_vertical|right"
+                android:paddingRight="10dp"
+                android:text="@string/ta"
+                android:textColor="@color/red"
+                android:textSize="@dimen/tab_button_height"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/view72"
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.001"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/txt_id32"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center"
+                android:text=""
+                android:textColor="@color/red"
+                android:textSize="@dimen/tab_button_height"
+                android:textStyle="bold" />
+              <View
+                android:id="@+id/view33"
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.001"
+                android:background="@color/black" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view61"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/placeorder"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_weight="0.001"
+            android:background="@color/black" />
+
+        <Button
+            android:id="@+id/placeorder"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tab_top_size"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+              android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/square"
+            android:textSize="@dimen/tab_button_height"
+            android:text="@string/porder"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

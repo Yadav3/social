@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/Desc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:padding="10dp"
+        android:text="Your total points earned: 4000"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnDropDown"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Desc"
+        android:layout_margin="10dp"
+        android:background="#757575"
+        android:padding="10dp"
+        android:text="Select points to redeem"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnRedeemed"
+        android:layout_width="fill_parent"
+       android:layout_height="@dimen/button_height"
+        android:layout_below="@+id/btnDropDown"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/red_color"
+        android:padding="10dp"
+        android:text="SUBMIT"
+        android:textColor="@color/white"
+        android:textSize="13sp" />
+
+</RelativeLayout>

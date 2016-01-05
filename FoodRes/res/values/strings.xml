@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">eatz</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_id">1426668317545232</string>
+
+    <!-- Home -->
+    <string name="openNow">Open Now</string>
+    <!-- Description here -->
+    <string name="orderfood">Order Food</string>
+    <!-- Description here -->
+    <string name="bookTable">Book Table</string>
+    <!-- Description here -->
+    <string name="Deals">Deals</string>
+    <!-- Description here -->
+    <string name="fun">HaveFun</string>
+    <!-- Description here -->
+    <string name="happyhours">HappyHours</string>
+    <!-- Description here -->
+    <string name="buffet">BuffetPlace</string>
+    <!-- Description here -->
+    <string name="more">More</string>
+    <!-- Description here -->
+    <string name="GoodMorning">Your local food guide</string>
+    <!-- Description here -->
+    <string name="GoodMorningBottomLine">Order food online | Book a table | Explore</string>
+    <!-- Description here -->
+    <string name="Whatdofind">What\'s your craving?</string>
+    <!-- Description here -->
+    <string name="example">eg:Pasta,Italian,Kebabs.</string>
+    <string name="review_string">One of its kind setting - open air across the Hussain Sagar Lake. The decore and the seating are unique and given a royal feeling. The menu is a good blend of indian, Italian and others. Cocktails are good including the in - house ones. The food is reasonably priced - a Kabab starter costs 220 + taxes is good enough for 3/4. On Saturdays, they have Karaoke as well which makes even more perfect. One of its kind setting - open air across the Hussain Sagar Lake.
+
+The decore and the seating are unique and given a royal feeling. The menu is a good blend of indian, Italian and others. Cocktails are good including the in - house ones. The food is reasonably priced - a Kabab starter costs 220 + taxes is good enough..</string>
+
+    <!-- Explore -->
+    <string name="opennowResturent">Restaurants</string>
+    <!-- Description here -->
+    <string name="filters">Filters</string>
+    <string name="mapview">Map View</string>
+    <!-- Description here -->
+    <string name="sort">Sort</string>
+    <!-- Description here -->
+    <string name="direction">Directions</string>
+
+    <!-- Search Details -->
+    <string name="writeReview">Write a Review</string>
+    <!-- Description here -->
+    <string name="highligts">Highlights</string>
+    <!-- Description here -->
+    <string name="creditAccepted">CreditCard Accepted</string>
+    <!-- Description here -->
+    <string name="barAvailble">Liquor Served</string>
+    <!-- Description here -->
+    <string name="takeAway">Takeaway Available</string>
+    <!-- Description here -->
+    <string name="dineIn">Dine-in Available</string>
+    <!-- Description here -->
+    <string name="cuisines">Cuisines</string>
+    <!-- Description here -->
+    <string name="timings">Timings</string>
+    <!-- Description here -->
+    <string name="cost">Cost</string>
+    <!-- Description here -->
+    <string name="menu">Menu</string>
+    <!-- Description here -->
+    <string name="HappyHours">Happy Hours</string>
+    <!-- Description here -->
+    <string name="drinks">Drinks</string>
+    <!-- Description here -->
+    <string name="facilities">Facilities</string>
+    <!-- Description here -->
+    <string name="Overview">Overview</string>
+    <!-- Description here -->
+    <string name="rating">Rating Review</string>
+    <!-- Description here -->
+    <string name="breakfast">Brekfast</string>
+    <!-- Description here -->
+    <string name="lunch">Lunch</string>
+    <!-- Description here -->
+    <string name="dinner">Dinner</string>
+    <!-- Description here -->
+    <string name="viewAllReviews">View all Reviews</string>
+
+    <!-- Deals -->
+
+    <string name="dealsHeader">Restaurants Deals</string>
+    <string name="lsPrice">LS Price</string>
+    <string name="paynow">Pay Now</string>
+    <string name="gobeyond">Go beyond your limits!!</string>
+    <string name="selectQty">Select Qty</string>
+
+    <string-array name="quatity">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <!-- Description here -->
+    <string name="getFreeVoucher">Get Free Voucher</string>
+    <string name="sharethisON">Share this on</string>
+    <string name="viewMenu">ViewMenu</string>
+    <string name="highLights">Highlights</string>
+    <string name="termss">Terms and Conditions</string>
+
+    <!-- Login -->
+    <string name="login_header">Login</string>
+    <string name="login_facebook">LOGIN WITH FACEBOOK</string>
+    <string name="login_gmail">LOGIN WITH GOOGLE</string>
+    <string name="deviderTEXT">OR</string>
+    <string name="emailHINT">Email Adderss</string>
+    <string name="password">Password</string>
+    <string name="forgotPSWD">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="signupNow">Don\'t have an eatz account? Sign Up here</string>
+
+    <!-- Register -->
+    <string name="signup_header">Signup</string>
+    <string name="nameInRester">Name</string>
+    <string name="phone">Phone</string>
+    <string name="terms">By signingup,I agree to Term</string>
+    <string name="signUp">Signup</string>
+    <string name="member">Already an eatz member Login now</string>
+    <string name="alphabet">Alphabetical</string>
+    <string name="Rating">Rating</string>
+    <string name="Distance">Distance</string>
+    <string name="Price">Price</string>
+    <string name="sortBy">Sort by</string>
+    <string name="Filters">Filters</string>
+    <string name="typeLocation">Type your location here</string>
+    <string name="typeCusine">Type your cuisine here</string>
+    <string name="oneRupee">\u20B9</string>
+    <string name="twoRupees">\u20B9 \u20B9</string>
+    <string name="threeRupee">\u20B9 \u20B9 \u20B9</string>
+    <string name="fourRupee">\u20B9 \u20B9 \u20B9 \u20B9</string>
+    <string name="creditCards">Credit cards</string>
+    <string name="sundayBranch">Sunday Brunch</string>
+    <string name="vegOnly">Veg Only</string>
+    <string name="breakfastBuffet">Breakfast Buffet</string>
+    <string name="lunchBuffet">Lunch Buffet</string>
+    <string name="dinnerBuffet">Dinner Buffet</string>
+    <string name="midnightBuffet">Midnight Buffet</string>
+    <string name="hasDeals">Has Deals</string>
+    <string name="addFav">Add to Favorites</string>
+    <string name="Recommended">\nWant to try</string>
+    <string name="BeenThere">Been There</string>
+    <string name="addToPhoto">Add To Photo</string>
+    <string name="viewMap">View Map</string>
+    <string name="emailThisVenue">Email This Venue</string>
+    <string name="sendToFrnd">Send To Friend</string>
+    <string name="sendTomob">Send To Mobile</string>
+    <string name="address2">4-1-465/466, Bank Street, Abids </string>
+    <string name="no_result_heading">Ooops!!!!</string>
+    <string name="no_result_msg">Sorry, No results found</string>
+    <string name="browse_results">Browse near by restaurants</string>
+
+    <string-array name="mennumber">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string name="for_men">For MEN</string>
+    <string name="select_session">SELECT SESSION</string>
+
+    <string-array name="value">
+        <item>EUR</item>
+        <item>AED</item>
+        <item>USD</item>
+        <item>GBP</item>
+        <item>AUD</item>
+        <item>CAD</item>
+        <item>AEM</item>
+        <item>ARS</item>
+        <item>BGN</item>
+        <item>BHD</item>
+        <item>BND</item>
+        <item>BRL</item>
+    </string-array>
+    
+    
+     <string name="submit_review">Submit Review</string>
+     <string name="write_a_review">Write A Review</string>
+     
+    
+
+</resources>

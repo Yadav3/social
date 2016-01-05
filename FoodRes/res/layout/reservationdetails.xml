@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/SVReservationDetails"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingTop="10dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingBottom="5dp" >
+
+            <TextView
+                android:id="@+id/txtReservationDetailsTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/btnClose"
+                android:background="#ebebeb"
+                android:padding="10dp"
+                android:text="Reservation information"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:id="@+id/LYDialog"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/txtReservationDetailsTitle"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtReservationDetailsDate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/borderbg"
+                        android:padding="10dp"
+                        android:text="Date"
+                        android:textColor="#4e4e4e"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/txtReservationDetailsDate1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/signupborder"
+                        android:padding="10dp"
+                        android:text="Nov 13, 2013"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout01"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtReservationDetailsVenue"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/borderbg"
+                        android:padding="10dp"
+                        android:text="Venue"
+                        android:textColor="#4e4e4e"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/txtReservationDetailsVenue1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/signupborder"
+                        android:lineSpacingExtra="2dp"
+                        android:padding="10dp"
+                        android:text="10 Lounge , Plot No 92 , Suryakiran Complex, Sarojini Devi Road"
+                        android:textColor="@color/red_color"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout02"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtReservationDetailsSession"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/borderbg"
+                        android:padding="10dp"
+                        android:text="Session"
+                        android:textColor="#4e4e4e"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/txtReservationDetailsSession1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/signupborder"
+                        android:padding="10dp"
+                        android:text="Lunch"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout04"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtReservationDetailsPartySize"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/borderbg"
+                        android:padding="10dp"
+                        android:text="Party size"
+                        android:textColor="#4e4e4e"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/txtReservationDetailsPartySize1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/signupborder"
+                        android:padding="10dp"
+                        android:text="5"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout07"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtReservationDetailsConfirmationNo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/borderbg"
+                        android:padding="10dp"
+                        android:text="Confirmation number"
+                        android:textColor="#4e4e4e"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/txtReservationDetailsConfirmationNo1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/signupborder"
+                        android:padding="10dp"
+                        android:text="325"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout05"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtReservationDetailsStatus"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/borderbg"
+                        android:padding="10dp"
+                        android:text="Status"
+                        android:textColor="#4e4e4e"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/txtReservationDetailsStatus1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/signupborder"
+                        android:padding="10dp"
+                        android:text="active"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout03"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtReservationDetailsPoints"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/borderbg"
+                        android:padding="10dp"
+                        android:text="Points"
+                        android:textColor="#4e4e4e"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/txtReservationDetailsPoints1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/signupborder"
+                        android:padding="10dp"
+                        android:text="500"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout06"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtReservationDetailsMadeOn"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/borderbg"
+                        android:padding="10dp"
+                        android:text="Made on"
+                        android:textColor="#4e4e4e"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/txtReservationDetailsMadeOn1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/signupborder"
+                        android:padding="10dp"
+                        android:text="Nov 13, 2013"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnClose"
+                android:layout_width="25dp"
+                android:layout_height="15dp"
+                android:layout_alignBottom="@+id/txtReservationDetailsTitle"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/icon_wrong" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" >
+
+            <TextView
+                android:id="@+id/txtCancel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@color/red_color"
+                android:gravity="center_vertical|center_horizontal"
+                android:padding="10dp"
+                android:text="Cancel Booking"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtRateVenue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@color/red_color"
+                android:gravity="center_vertical|center_horizontal"
+                android:padding="10dp"
+                android:text="Rate this venue"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtClaimPoints"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@color/red_color"
+                android:gravity="center_vertical|center_horizontal"
+                android:padding="10dp"
+                android:text="Claim points"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtRaiseDispute"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@color/red_color"
+                android:gravity="center_vertical|center_horizontal"
+                android:padding="10dp"
+                android:text="Raise dispute"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

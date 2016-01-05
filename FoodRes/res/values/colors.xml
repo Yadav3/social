@@ -1,0 +1,27 @@
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="filters_white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="green">#088A08</color>
+    <color name="red">#FF0000</color>
+    <color name="red_color">#d42a2b</color>
+    <color name="button_bg">#232425</color>
+    <color name="hash">#5A5C5C</color>
+    <color name="dialog_text_color">#373737</color>
+    <color name="dialog_text_background">#f0f0f0</color>
+
+    <!-- old colors from 16/01/15 -->
+    <color name="text_blue_color">#1770c0</color>
+    <color name="text_order_food_color">#5eab12</color>
+    <color name="filters_background">#fee388</color>
+    
+    <color name="know_top">#353131</color>
+    <color name="know_yellow">#f5cb29</color>
+    <color name="know_bg">#d05a60 </color>
+    <color name="know_pic">#d6d5d5 </color>
+      <color name="sort_bg">#303030 </color>
+       <color name="sort_bg_border">#6a6a6a </color>
+     
+
+</resources>

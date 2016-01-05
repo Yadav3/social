@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" >
+
+        <TextView
+            android:id="@+id/txtPointsDate"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:background="@drawable/borderbg"
+            android:padding="10dp"
+            android:text="Date"
+            android:textColor="#4e4e4e" />
+
+        <TextView
+            android:id="@+id/txtPointsDate1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="@drawable/signupborder"
+            android:padding="10dp"
+            android:textColor="@color/red_color" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/txtPointsVenue"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@drawable/borderbg"
+            android:padding="10dp"
+            android:text="Venue"
+            android:textColor="#4e4e4e" />
+
+        <TextView
+            android:id="@+id/txtPointsVenue1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="@drawable/signupborder"
+            android:padding="10dp"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/txtPointsType"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@drawable/borderbg"
+            android:padding="10dp"
+            android:text="Type"
+            android:textColor="#4e4e4e" />
+
+        <TextView
+            android:id="@+id/txtPointsType1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="@drawable/signupborder"
+            android:padding="10dp"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout05"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txtPointsEarned"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@drawable/borderbg"
+            android:padding="10dp"
+            android:text="Points earned"
+            android:textColor="#4e4e4e" />
+
+        <TextView
+            android:id="@+id/txtPointsEarned1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="@drawable/signupborder"
+            android:padding="10dp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+</LinearLayout>

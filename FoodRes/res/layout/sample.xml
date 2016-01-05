@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txtBookTableIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottomborder"
+        android:drawableLeft="@drawable/book_a_table_icon"
+        android:drawablePadding="10dp"
+        android:text="Book a table" />
+
+    <TextView
+        android:id="@+id/txtOrderTkeAwayIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottomborder"
+        android:drawableLeft="@drawable/order_takeaway_icon"
+        android:drawablePadding="10dp"
+        android:text="Order takeaway" />
+
+    <TextView
+        android:id="@+id/txtHomeDelIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottomborder"
+        android:drawableLeft="@drawable/home_delivery_icon"
+        android:drawablePadding="10dp"
+        android:text="Get home delivery" />
+
+    <TextView
+        android:id="@+id/txtFindDealsIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottomborder"
+        android:drawableLeft="@drawable/find_deals_icon"
+        android:drawablePadding="10dp"
+        android:text="Find deals" />
+
+    <TextView
+        android:id="@+id/txtOpenNowIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottomborder"
+        android:drawableLeft="@drawable/opened_restuarants_icon"
+        android:drawablePadding="10dp"
+        android:text="Restaurants open now" />
+
+    <TextView
+        android:id="@+id/txtHappyHrsIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottomborder"
+        android:drawableLeft="@drawable/happy_hours_icon"
+        android:drawablePadding="10dp"
+        android:text="Happy hours" />
+
+    <TextView
+        android:id="@+id/txtStarIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottomborder"
+        android:drawableLeft="@drawable/star_property_icon"
+        android:drawablePadding="10dp"
+        android:text="Star property" />
+
+    <TextView
+        android:id="@+id/txtRestaurantsIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottomborder"
+        android:drawableLeft="@drawable/vegetarian_icon"
+        android:drawablePadding="10dp"
+        android:text="Vegetarian restaurants" />
+
+    <TextView
+        android:id="@+id/txtDrinksIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottomborder"
+        android:drawableLeft="@drawable/liquors_icon"
+        android:drawablePadding="10dp"
+        android:text="Go out for drinks" />
+
+    <TextView
+        android:id="@+id/txtServingIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottomborder"
+        android:drawableLeft="@drawable/breakfast_buffets_icon"
+        android:drawablePadding="10dp"
+        android:text="Restaurants serving buffet" />
+
+    <TextView
+        android:id="@+id/txtSundayIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottomborder"
+        android:drawableLeft="@drawable/sunday_brunchs_icon"
+        android:drawablePadding="10dp"
+        android:text="Sunday brunch" />
+
+</LinearLayout>

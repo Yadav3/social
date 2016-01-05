@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+<TextView
+    android:id="@+id/menuText"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_marginBottom="0.5dp"
+    android:background="#313131"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="5dp"
+    android:text="VEG - SOUPS"
+    android:textColor="@color/white"
+    android:textSize="11dp" >
+
+</TextView>
+
+</RelativeLayout>

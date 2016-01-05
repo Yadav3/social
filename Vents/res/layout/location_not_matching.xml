@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+      android:background="@drawable/no_events_in_your_location"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp"
+        android:visibility="invisible"
+        android:text="Button" />
+
+    <TextView
+        android:id="@+id/back_home_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/selectbox_bg"
+        android:drawablePadding="20dp"
+        android:drawableRight="@drawable/selectbox_arrow"
+        android:gravity="center"
+        android:paddingRight="10dp"
+        android:text="Choose a location"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_height"
+        android:textStyle="bold" />
+
+</RelativeLayout>

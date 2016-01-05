@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/first_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_view_bg"
+    android:orientation="vertical" >
+
+    <ViewFlipper
+        android:id="@+id/flipper1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:flipInterval="3000"
+        android:inAnimation="@anim/trans_right_in"
+        android:outAnimation="@anim/trans_right_out"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal|top"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop" />
+    </ViewFlipper>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/white"
+           android:visibility="gone"
+        android:gravity="center_vertical|center" >
+
+        <Gallery
+            android:id="@+id/gallery1"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_toRightOf="@+id/button1"
+            android:background="#fff"
+           
+            android:spacing="2dp"
+            />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="59dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/month_arrows"
+            android:gravity="center_vertical|center"
+            android:text="" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="15.0sp"
+        android:padding="10dp"
+        android:paddingRight="5dp" >
+    </ListView>
+     <RelativeLayout
+        android:id="@+id/no_ticket"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/no_results_found"
+        android:visibility="gone"
+         >
+
+        <TextView
+            android:id="@+id/back_home_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="150dp"
+            android:background="@drawable/backtohome_btn" />
+    </RelativeLayout>
+
+</LinearLayout>

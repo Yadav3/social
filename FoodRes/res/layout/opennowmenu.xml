@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d0d0d0"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/red_color" >
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:src="@drawable/back_arrow" />
+
+            <TextView
+                android:id="@+id/tvOpenNowTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/back"
+                android:text="Open Now"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/options"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@null"
+                android:padding="10dp"
+                android:src="@drawable/menu_icon" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvRestaurant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/restaurants"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/fwd_arw"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:text="Restaurants"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvQuickBites"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/delivery_now"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/fwd_arw"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:text="Quick Bites"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvHappyHrs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/happy_hour"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/fwd_arw"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:text="Happy Hours"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvLunchBuffet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/lunch_buffet"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/fwd_arw"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:text="Lunch Buffet"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDinnerBuffet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/lunch_buffet"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/fwd_arw"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:text="Dinner Buffet"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvPubAndBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/pub_bar"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/fwd_arw"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:text="Pub &amp; Bar"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDeliveryNow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/delivery_now"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/fwd_arw"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:text="Delivery Now"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

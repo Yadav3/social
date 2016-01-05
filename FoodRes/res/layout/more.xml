@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d0d0d0"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/red_color" >
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:padding="15dp"
+                android:src="@drawable/back_arrow" />
+
+            <TextView
+                android:id="@+id/tvMoreTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/back"
+                android:text="More"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/options"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@null"
+                android:padding="10dp"
+                android:src="@drawable/menu_icon" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvStar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/star_property"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/fwd_arw"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:text="Star Property"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvVegRestaurants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/vegetarian"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/fwd_arw"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:text="Vegetarian Restaurants"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvGoOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/liquor"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/fwd_arw"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:text="Go out for drinks"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCafes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/liquor"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/fwd_arw"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:text="Cafes"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvPrivateDining"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/liquor"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/fwd_arw"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:text="Private Dining"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvBuffet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/breakfast_buffet"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/fwd_arw"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:text="Restaurants serving Buffet"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvNightLife"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/sunday_brunch"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/fwd_arw"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:text="Night life"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvSunday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/sunday_brunch"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/fwd_arw"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:text="Sunday Brunch"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        
+          <TextView
+                android:id="@+id/tvEvents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/event_icon"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/fwd_arw"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:text="Events"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvArticles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/articles"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/fwd_arw"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:text="Articles"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

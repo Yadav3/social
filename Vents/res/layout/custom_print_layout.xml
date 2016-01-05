@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/ticketid"
+                android:textSize="@dimen/button_height"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ticketid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/ticket"
+                android:layout_alignBottom="@+id/ticket"
+                android:layout_marginLeft="45dp"
+                android:layout_toRightOf="@+id/ticket"
+               
+                android:textSize="@dimen/button_height"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/ticket"
+                android:layout_marginTop="20dp"
+                android:text="@string/event"
+                android:textSize="@dimen/button_height"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/eventid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/event"
+                android:layout_alignBottom="@+id/event"
+                android:layout_alignLeft="@+id/ticketid"
+               
+                android:textSize="@dimen/button_height"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tickettype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/event"
+                android:layout_marginTop="20dp"
+                android:text="@string/ticket_type"
+                android:textSize="@dimen/button_height"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tickettypeid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tickettype"
+                android:layout_alignBottom="@+id/tickettype"
+                android:layout_alignLeft="@+id/eventid"
+               
+                android:textSize="@dimen/button_height"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tickettype"
+                android:layout_marginTop="20dp"
+                android:text="@string/name"
+                android:textSize="@dimen/button_height"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/name"
+                android:layout_alignBottom="@+id/name"
+                android:layout_alignLeft="@+id/tickettypeid"
+                
+                android:textSize="@dimen/button_height"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/viewticket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/square"
+                    android:gravity="center|center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/vticket"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/button_height"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/sendemail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/square"
+                    android:gravity="center|center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/semail"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/button_height"
+                    android:textStyle="bold" />
+            </LinearLayout>
+             <View
+                    android:layout_width="100dp"
+                    android:layout_height="10dp"
+                    android:layout_below="@+id/linear" />
+        </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      
+        android:weightSum="4" >
+
+        <View
+            android:id="@+id/view111"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.001"
+            android:background="@drawable/line" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+              android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+            android:layout_weight="2"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text=""
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view112"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.001"
+            android:background="@drawable/line" />
+
+        <TextView
+            android:id="@+id/qty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+              android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+            android:gravity="center_vertical|center"
+           
+            android:text=""
+            android:textColor="@color/black" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.001"
+            android:background="@drawable/line" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+              android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center"
+            android:text="" />
+
+        <View
+            android:id="@+id/view113"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.001"
+            android:background="@drawable/line" />
+    </LinearLayout>
+
+</LinearLayout>
